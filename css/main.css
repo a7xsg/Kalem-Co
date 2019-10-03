@@ -610,10 +610,10 @@ td, th {
   margin-right: 0; }
 
 .section-gap {
-  padding: 150px 0; }
+  padding: 100px 0; }
   @media (max-width: 991px) {
     .section-gap {
-      padding: 80px 0; } }
+      padding: 100px 0; } }
 
 .section-title {
   padding-bottom: 80px; }
@@ -1552,13 +1552,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997; }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
-  transition: all 0.5s; }
-  #header.header-scrolled .nav-menu li:hover > a, #header.header-scrolled .nav-menu > .menu-active > a {
-    color: #ffffff; }
-  #header.header-scrolled .nav-menu li>a{
-    color: white;
-  }
+  transition: all 0.5s; 
+  border-bottom: #777 5apx;
+}
+  
 
 @media (max-width: 673px) {
   #logo {
@@ -1790,11 +1787,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff; }
 
 .home-banner-area {
-  background: #03A6A6 no-repeat top center;
+  background: url("../img/banner.jpg");
+  height: 550px;
   background-size: cover; }
   @media (max-width: 767.98px) {
     .home-banner-area .fullscreen {
-      height: 900px !important; } }
+      height: 200px;} }
 
 .rocket-img {
   position: absolute;
@@ -1994,9 +1992,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .feature-item {
   padding: 50px 40px;
   background: #f1f9ff;
+  height: 400px;
   margin-bottom: 30px;
-  height: 450px;
-  border-radius: 10px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2028,7 +2025,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 30px 40px;
   border: #03A6A6 solid 2px;
   border-radius: 5px;
-  height: 400px;
   background: #fff; }
   @media (max-width: 1024px) {
     .single-faculty .meta-text {
@@ -2759,7 +2755,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*  Footer Styles
 /* =================================== */
 .footer-area {
-  background: #03A6A6; }
+  background: #283367; }
   @media (max-width: 991px) {
     .footer-area .single-footer-widget {
       margin-bottom: 30px; } }
@@ -2841,7 +2837,55 @@ body.mobile-nav-active #mobile-nav-toggle {
 .fa{
   color: #03A6A6;
 }
-.fa:hover{
-  color: black;;
+.fa-facebook:hover{
+  color: #3B5998;
 }
+
+.fa-instagram:hover{
+  color: #c13584;
+}
+
+.fa-youtube:hover{
+  color: #c4302b;
+}
+
+
+
+#successtab{
+  display: none;
+}
+
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.card{
+  position: absolute;
+  height: 650px;
+  top: -600px;
+}
+
+.more-btn{
+  position: absolute;
+  bottom: 50px;
+}
+
+.footer-social a{
+    display: block;
+    margin: 20px 0px 20px 0px;
+    
+}
+
+
+
+
+
 /*# sourceMappingURL=main.css.map */
