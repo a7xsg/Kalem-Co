@@ -1788,11 +1788,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .home-banner-area {
   background: url("../img/banner.jpg");
-  height: 550px;
+  height: 450px;
   background-size: cover; }
   @media (max-width: 767.98px) {
     .home-banner-area .fullscreen {
       height: 200px;} }
+
+.teachers-banner-area {
+  background: url("../img/teachers.jpg");
+  height: 450px;
+  background-size: unset; }
+  @media (max-width: 767.98px) {
+  .teachers-banner-area .fullscreen {
+    height: 200px;} }
+
+.project-banner-area {
+  background: url("../img/project-banner.jpg");
+  height: 450px;
+  background-size: cover; }
+  @media (max-width: 767.98px) {
+  .project-banner-area .fullscreen {
+    height: 200px;} }
+
 
 .rocket-img {
   position: absolute;
@@ -2018,11 +2035,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .faculty-area {
   background-color: #f1f9ff; }
 
+.single-faculty{
+  display: block;
+  margin: 10px 0px 10px 0px;
+}
+
 .single-faculty .thumb {
   position: relative;
   bottom: -30px; }
 .single-faculty .meta-text {
   padding: 60px 30px 40px;
+  height: 200px;
   border: #03A6A6 solid 2px;
   border-radius: 5px;
   background: #fff; }
@@ -2869,8 +2892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .card{
   position: absolute;
-  height: 650px;
-  top: -600px;
+  top: -500px;
 }
 
 .more-btn{
@@ -2884,8 +2906,43 @@ body.mobile-nav-active #mobile-nav-toggle {
     
 }
 
+#teachers a{
+  position: relative;
+  bottom: -50px;
+  font-size: 25px;
+  color: #03A6A6;
+}
 
+#teachers a:hover{
+  text-decoration: underline;
+}
 
+.single-teacher{
+  position: relative;
+}
+.t-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.single-teacher:hover .overlay {
+  opacity: 1;
+}
 
 
 /*# sourceMappingURL=main.css.map */
