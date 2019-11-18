@@ -2894,6 +2894,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   top: -500px;
 }
+@media (max-width: 991px) {
+    .card{
+      position: relative;
+      top: 0px;
+    }
+}
 
 .more-btn{
   position: absolute;
